@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обробка подій клавіатури</title>
+</head>
+<body>
+
+<input type="text" id="myInput" placeholder="Введіть текст">
+
+<script>
+    // Отримуємо текстове поле за допомогою його id
+    const myInput = document.getElementById('myInput');
+
+    // Додаємо обробник події для натискання клавіші
+    myInput.addEventListener('keydown', function() {
+        // Виводимо повідомлення у консоль при натисканні клавіші
+        console.log('Клавіша була натиснута!');
+    });
+</script>
+
+</body>
+</html>

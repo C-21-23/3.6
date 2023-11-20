@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Використання addEventListener</title>
+</head>
+<body>
+
+<!-- Будь-який елемент на сторінці -->
+<button id="myButton">Натисни мене</button>
+
+<script>
+    // Отримуємо елемент за його id
+    var myButton = document.getElementById('myButton');
+
+    // Додаємо перший обробник події
+    myButton.addEventListener('click', function() {
+        alert('Подія виникла!');
+    });
+
+    // Додаємо другий обробник події
+    myButton.addEventListener('click', function() {
+        alert('Ще один обробник події!');
+    });
+</script>
+
+</body>
+</html>
